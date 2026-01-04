@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS/signup.css" />
+  </head>
+  <body>
+    <!--Main Container -->
+    <div class="login-container">
+      <form class="login-form" id="loginForm">
+        <h2 style="margin-left: 40%">Sign up</h2>
+        <label for="email">Email address</label>
+        <div class="input-container">
+          <img class="icons" src="images/emailIcon2.png" />
+          <input type="email" id="email" placeholder="Email Address" required />
+        </div>
+       
+        <label for="password">Password</label>
+        <div class="input-container">
+          <img class="icons" src="images/password-icon2.png" />
+          <input type="password" id="password" placeholder="Enter Password.." required />
+        </div>
+        <div class="error-msg"></div>
+        <label for="confirm-password">Confirm Password</label>
+        <div class="input-container">
+          <img class="icons" src="images/password-icon2.png" />
+          <input type="password" id="confirm-password" placeholder="Confirm Password.." required />
+          
+        </div>
+           <div class="error-msg"></div>
+
+        <button type="submit" class="btn" onclick="signup(event)">Log in</button>
+        <p class="signup-link">
+          Don't have an account? <a href="login.html">login here</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="JS/signup.js"></script>
+  </body>
+</html>

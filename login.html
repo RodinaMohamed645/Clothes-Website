@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" type="image/png" href="images/logo-remove.png">
+    <link rel="stylesheet" href="CSS/longin.css">
+</head>
+<body>
+    <!--Main Contain -->
+    <div class="login-container">
+        <form class="login-form">
+            <h2 style="margin-left: 40%;">Log In</h2>
+            
+            <label for="email">Email address</label>
+            <div class="input-container">
+                <img class="icons" src="images/emailIcon2.png">
+                <input type="email" id="email" placeholder="Email Address" required name="email">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="input-container">
+                <img class="icons" src="images/password-icon2.png">
+                <input type="password" id="password" placeholder="Enter Password.." required name="password">
+                <input class="checkbox1" type="checkbox" onclick="ShowPasswordValue()" style="cursor: pointer;">
+                <img class="icons" src="images/eyeicon.png">
+            </div>
+            <span id="ShowErrorLogin"></span>
+            <button type="submit" class="btn" id="logbutton" onclick="login(event)">Log in</button>
+            <p class="signup-link">Don't have an account? <a href="signin.html">Sign up here</a></p>
+        </form>
+    </div>
+
+
+
+<script  src="JS/login.js">
+ 
+</script>
+</body>
+</html>

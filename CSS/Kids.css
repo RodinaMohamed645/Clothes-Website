@@ -1,0 +1,515 @@
+/*----------------------------------header----------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive
+}
+body
+{
+   background-color: #f8f8f8;
+   font-family: cursive; 
+ 
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10PX;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 62px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+   
+}
+header ul
+{
+    list-style-type: none;
+    display: flex;
+    width:794.583;
+    justify-content: space-between;
+    margin-left: 200px;
+    /* border:2px solid black;
+    */
+}
+.navbar
+{
+    text-align: center;
+    padding: 7px ;
+   
+}
+.navbar a
+{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover
+{
+  color:#e1541c;
+}
+
+#logo
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* border:2px solid black; */
+}
+#logo span
+{
+    color: #e1541c;
+}
+
+.auth-button
+{
+    padding: 5px;
+}
+.auth-button .login
+{
+    padding: 5px 15px;
+    border: 1px solid #333;
+    background: none;
+    font-size: 0.9em;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+.auth-button .signup
+{
+    padding: 5px 15px;
+    border: 1px solid #333;
+    background: #333;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 8px;
+    font-weight: bold;
+
+} 
+/*-----------------------------cart in nav bar-------------------*/
+
+.icons-list
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: -150px;
+
+}
+.icon-cart
+{
+    cursor: pointer;
+}
+.icon-cart i
+{
+    font-size: 26px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+}
+
+.icon-heart i
+{
+    font-size: 26px;
+    padding: 10px;
+    display: flex;
+}
+ .icon-cart span
+{
+    position: absolute;
+    background-color: red;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -3px;
+} 
+.icon-heart span
+{
+    position: absolute;
+    background-color: red;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    left:27px;
+} 
+/*-----------------------add to cart--------------------*/
+.cart
+{
+    position: fixed;
+    top:0px;
+    right:-100%;
+    width:360px;
+    height:100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    padding:65px 20px 40px;
+    z-index: 100;
+    overflow: auto;
+    transition: 0.5s;
+}
+.cart.active
+{
+    right: 0px;
+}
+.cart-title
+{
+    text-align: center;
+    font-size: 30px;   
+}
+.cartbox
+{
+    display:flex;
+    align-items: center;
+    margin-top:20px;
+}
+.cartbox img
+{
+    width:100px;
+    height:100px;
+    border-radius:6px;
+    object-fit:cover;
+    margin-right:20px
+}
+.cartdetail
+{
+    display:grid;
+    gap:8px;
+    margin-right: auto;
+
+
+}
+.cart-product-title
+{
+    font-size:16px;
+    line-height:1;
+}
+.cart-price
+{
+    font-weight: 500px;
+}
+.cart-quantity
+{
+    display:flex;
+    width:100px;
+    border:1px solid #999;
+    border-radius:6px;
+}
+.cart-quantity button
+{
+    background: transparent;
+    width:30px;
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart-quantity #decrement 
+{
+    color:#999;
+}
+.cart-quantity .number
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    border-left:1px solid #9999;
+    border-right: 1px solid #999;
+    cursor:default;
+}
+.cart-remove
+{
+    font-size:25px;
+    cursor:pointer;
+}
+.total
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top:1px solid #333 ;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+.total-price
+{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.btn-buy
+{
+    display: block;
+    padding:10px 30px;
+    background:#e15a1c;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color:#fff;
+    margin: 20px auto 0;
+    cursor: pointer;
+
+}
+#cart-close
+{
+    position: absolute;
+    top:20px;
+    right:15px;
+    font-size: 35px;
+    cursor: pointer;
+}
+/*--------------------------------add to favourite-----------------------------*/
+.Favorite
+{
+    position: fixed;
+    top:0px;
+    right:-100%;
+    width:360px;
+    height:100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    padding:65px 20px 40px;
+    z-index: 100;
+    overflow: auto;
+    transition: 0.5s;
+}
+.Favorite.active
+{
+    right: 0px;
+}
+.Favorite-title
+{
+    text-align: center;
+    font-size: 30px; 
+}
+.FavouriteBox
+{
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+
+}
+.FavouriteBox img
+{
+    width:100px;
+    height: 100px;
+    border-radius:6px;
+    object-fit:cover;
+    margin-right:20px;
+} 
+.FavouriteBox .detail
+{
+    display:grid;
+    gap:8px;
+    margin-right: auto;
+}
+.Favorite-product-title
+{
+    font-size:16px;
+    line-height:1;
+}
+.Favorite-price
+{
+    font-weight: 500px;
+}
+
+.Favorite-remove
+{
+    font-size:25px;
+    cursor:pointer;
+}
+#Favorite-close
+{
+    position: absolute;
+    top:20px;
+    right:15px;
+    font-size: 35px;
+    cursor: pointer;
+}
+/*------------------------------main content---------------------------*/
+/*-------------------leFT SIDE-------------*/
+main
+{
+    display: flex;
+    margin:20px;
+   
+}
+main .left
+{
+   
+    width: 25%;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+    padding: 20px;
+   
+}
+.left img
+{
+    height: 200px;
+    width: 240px;
+}
+.left input[type="text"]
+{
+    width:100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    margin-bottom:30px ;
+
+}
+.left h3
+{
+    padding-top: 10px;
+}
+.left p
+{
+    padding: 5px;
+    padding-left: 0px;
+}
+.left .leftProductNmae
+{
+    padding: 0px;
+    margin: 0pX;
+}
+
+/*----------------------RIGHT SIDE--------------------*/
+main .right
+{
+    
+    width:75%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+}
+main .right .right_product
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+    
+}
+main .right .product_item
+{
+ 
+    text-align: center;
+  
+}
+main .right .product_item  img
+{
+    width:80%;
+    height: auto;
+    border-radius: 30px;  
+    
+}
+.rightProductName
+{
+    color: #666;
+}
+.rightProductPrice
+{
+    padding: 20px;
+}
+/**********************icons**************************************/
+
+.product_item
+        {
+            position: relative;
+            
+        } 
+ .product_item img
+        {
+            position: relative;
+            /* width: 100%; */
+        }
+  .icons {
+            position: absolute;
+            top: 20px;
+            right: 60px;
+            
+            
+        }
+   .icons i {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 10px;
+            border-radius: 70%; /* Make the icons circular */
+            cursor: pointer;
+            display: block;
+            margin-bottom:5px ;
+            transition: background-color 0.3s;
+        }
+    
+
+
+/*-------------------------------footer-----------------*/
+footer
+{
+    background-color: black;
+   color: #fff;
+  font-family: Arial, sans-serif;
+}
+footer .title
+{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .title span
+{
+    color:#e1541c;
+}
+footer .sales
+{
+    display: flex; 
+    gap: 450px; 
+}
+footer .sales ul
+{
+    list-style-type: none;
+}
+footer .sales a
+{
+    text-decoration: none;
+    color: #fff;
+    
+}
+footer .sales a:hover
+{
+    color:#e1541c;
+}
+
+footer .sales h3
+{
+    margin-bottom: 4px;
+}
+footer .sales li
+{
+    padding: 6px;
+    padding-left: 0px;
+    
+}
+footer p
+{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+

@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids's Wear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Kids.css">
+   
+</head>
+
+<body>
+    <header>
+        <div id="logo" style="margin-left: 40px;">
+            Ita<span>li</span>ano
+        </div>
+        <nav>
+            <ul>
+                <li class="navbar"><a href="Hometest.html">Home</a></li>
+                <li class="navbar"><a href="Woman.html">Woman</a></li>
+                <li class="navbar"><a href="Men.html">Men</a></li>
+                <li class="navbar"><a href="kids.html">Kids</a></li>
+                <li class="navbar"><a href="Bags.html">Bags</a></li>
+                <li class="navbar"><a href="ContactUs.html">Contact</a></li>
+                <li class="navbar"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="icons-list">
+            <div class="icon-heart">
+                <i class="fas fa-heart Favorite-icon-list "></i>
+                <span>0</span>
+            </div>
+            <div class="icon-cart">
+                <i class="fas fa-shopping-cart cart-icon-list"></i>
+                <span>0</span>
+            </div>
+
+
+
+        </div>
+        <div class="auth-button">
+            <button class="login">LOG IN</button>
+            <button class="signup">SIGN UP</button>
+        </div>
+    </header>
+    <div class="cart">
+        <h1 class="cart-title">Your Cart</h1>
+        <div class="cartContent">
+
+            <!-- <div class="cartbox">
+                <img src="images/mens/men1.jpg">
+                <div class="cartdetail">
+                    <h2 class="cart-product-title">Tshirt</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa fa-trash cart-remove" aria-hidden="true"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="fa fa-window-close" aria-hidden="true" id="cart-close"></i>
+    </div>
+    <div class="Favorite">
+        <h1 class="Favorite-title">Your Favourite</h1>
+        <div class="FavoriteContent">
+
+             <!-- <div class="FavouriteBox">
+                <img src="images/mens/men1.jpg">
+                <div class="detail">
+                    <h2 class="Favorite-product-title">Tshirt</h2>
+                    <span class="Favorite-price">$100</span>
+                </div>
+                <i class="fa fa-trash Favorite-remove" aria-hidden="true"></i> -->
+                <i class="fa fa-window-close" aria-hidden="true" id="Favorite-close"></i>
+            </div> 
+        </div>
+    </div>
+
+    <main>
+        <div class="left">
+            <input type="text" placeholder="Search products....">
+            <h3>Filter by Price </h3>
+            <input type="range" min="1" max="100" value="50" class="slider" style="width: 100%;">
+            <p>Price: $20 — $200</p>
+            <p
+                style="height: 35px ; width :100%; text-align:center; background-color:#007bff ;color:white; padding-top: 5px; ">
+                <a>FILTER</a>
+            </p>
+            <h3>Categories </h3>
+            <p>Accessories (7)</p>
+            <p>Men (14)</p>
+            <p>Women (17)</p>
+            <h3>Our Best Seller</h3>
+            <img src="images/kids/shoes1.jpg">
+            <p class="leftProductNmae">Basic Black Shoes</p>
+            <p>$150.00</p>
+            <img src="images/accessories.jpg">
+            <p class="leftProductNmae">Accessories</p>
+            <p>$175.00 — $200.00</p>
+            <img src="images/kids/black_bag.jpg">
+            <p class="leftProductNmae">Black Bag</p>
+            <p>$175.00 — $200.00</p>
+            <img src="images/kids/black_bag.jpg">
+            <p class="leftProductNmae">Black Accessories</p>
+            <p>$175.00 — $200.00</p>
+        </div>
+        <div class="right">
+            <h1 style="padding-left: 20px; padding-top: 20px;">Kids's wear</h1>
+            <p style="padding-left: 20px; color: #666;">Nam nec tellus a odio tincidunt auctor a ornare odio.
+                Sed non mauris vitae erat consequat auctor eu in elit.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+            </p>
+            <div class="right_product">
+                <div class="product_item">
+                    <img src="images/kids/kids1.jpg">
+                        <div class="icons">
+                        <i class="fas fa-heart Add-Favourite"></i>
+                        <i class="fas fa-shopping-cart Add-cart"></i>
+                        </div>
+                    <p class="rightProductName">ٍٍSkirt</p>
+                    <p class="rightProductPrice">$200.00</p>
+
+                </div>
+                <div class="product_item">
+                    <img src="images/kids/kids2.jpg">
+                    <div class="icons">
+                        <i class="fas fa-heart Add-Favourite"></i>
+                        <i class="fas fa-shopping-cart Add-cart"></i>
+                    </div>
+                    <p class="rightProductName"> Black Shoes</p>
+                    <p class="rightProductPrice">$175.00 </p>
+                </div>
+                <div class="product_item">
+                    <img src="images/kids/kids3.jpg">
+                     <div class="icons">
+                        <i class="fas fa-heart Add-Favourite"></i>
+                        <i class="fas fa-shopping-cart Add-cart"></i>
+                    </div>
+                    <p class="rightProductName">Ice Caps</p>
+                    <p class="rightProductPrice">$150.00</p>
+                </div>
+                <div class="product_item">
+                    <img src="images/kids/kids4.jpg">
+                    <div class="icons">
+                        <i class="fas fa-heart Add-Favourite"></i>
+                        <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName">Jacket</p>
+                <p class="rightProductPrice">$180.00</p>
+            </div>
+            <div class="product_item">
+                <img src="images/kids/kids5.jpg">
+                <div class="icons">
+                    <i class="fas fa-heart Add-Favourite"></i>
+                    <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName">Jeans</p>
+                <p class="rightProductPrice">$180.00</p>
+            </div>
+            <div class="product_item">
+                <img src="images/kids/kids6.jpg">
+                <div class="icons">
+                    <i class="fas fa-heart Add-Favourite"></i>
+                    <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName">Dress</p>
+                <p class="rightProductPrice">$150.00</p>
+            </div>
+            <div class="product_item">
+                <img src="images/kids/kids7.jpg">
+                <div class="icons">
+                    <i class="fas fa-heart Add-Favourite"></i>
+                    <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName">Hat</p>
+                <p class="rightProductPrice">$100.00</p>
+            </div>
+            <div class="product_item">
+                <img src="images/kids/kids8.jpg">
+                <div class="icons">
+                    <i class="fas fa-heart Add-Favourite"></i>
+                    <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName">Formal Cloth</p>
+                <p class="rightProductPrice"> $200.00</p>
+            </div>
+            <div class="product_item">
+                <img src="images/kids/kids9.jpg">
+                <div class="icons">
+                    <i class="fas fa-heart Add-Favourite"></i>
+                    <i class="fas fa-shopping-cart Add-cart"></i>
+                </div>
+                <p class="rightProductName"> Black Boots</p>
+                <p class="rightProductPrice"> $200.00</p>
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="title">
+            <span>SALE</span> UP TO <span style="  text-decoration: underline; ">70%</span> OFF FOR ALL CLOTHES &
+            FASHION ITEMS,
+            ON ALL BRANDS.
+        </h2>
+        <div class="sales">
+            <div style="padding: 20px;">
+                <h1 style="padding-bottom: 20px;">Ita<span style="color: #e1541c;">li</span>ano</h1>
+                <h2>The best look anytime, anywhere.</h2>
+            </div>
+            <div>
+                <ul>
+                    <h3>For HER</h3>
+                    <li><a href="news.asp">Clothing Store</a></li>
+                    <li><a href="contact.asp">Trending Shoes</a></li>
+                    <li><a href="about.asp">Accessories</a></li>
+                    <li><a href="about.asp">Sale</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <h3>For HIM</h3>
+                    <li><a href="news.asp">Clothing Store</a></li>
+                    <li><a href="contact.asp">Trending Shoes</a></li>
+                    <li><a href="about.asp">Accessories</a></li>
+                    <li><a href="about.asp">Sale</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <p>Copyright © 2024 All rights reserved</p>
+    </footer>
+    <script src="JS/ADD_TO_CART.JS"> </script>
+    <script src="JS/ADD_TO_FAVOURITE.JS"> </script>
+</body>
+
+</html>

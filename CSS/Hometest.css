@@ -1,0 +1,371 @@
+/* General Reset */
+* {
+    font-family: cursive;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+   }
+   hr {
+     border: 2px solid #f56a28;
+     width: 3%;
+     margin: 0 auto;
+     margin-bottom: 47px;
+   }
+   .HEAD{
+     margin-left: 2px;
+     width: 24%;
+ 
+   }
+   .wave{
+     position: absolute;
+     width: 100%;
+     margin-left: -38px;
+     margin-top: -118px;
+     z-index:1;
+   }
+ 
+   /* Navbar */
+ .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #f4f4f4;
+   border-bottom: 1px solid #ddd;
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+   
+ }
+ 
+ .navbar .logo {
+   font-size: 1.5em;
+   font-weight: bold;
+ }
+ nav li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 9px 27px;
+   text-decoration: none;
+ }
+ 
+ .nav-links {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+ 
+ }
+ .nav-links a:hover{
+     transition: 0.5s;
+     color: #ed751f;
+ }
+ 
+ .nav-links a {
+   text-decoration: none;
+   color: #333;
+   font-size: 1em;
+ }
+ 
+ .auth-buttons {
+   display: flex;
+   gap: 10px;
+ }
+ 
+ .auth-buttons .login,
+ .auth-buttons .signup {
+   padding: 5px 15px;
+   border: 1px solid #333;
+   background: none;
+   cursor: pointer;
+   font-size: 0.9em;
+   border-radius: 8px;
+ }
+ 
+ .auth-buttons .signup {
+   background-color: #333;
+   color: white;
+ }
+ 
+ /*end navbar*/
+ 
+ .product-grid button:hover{
+   transition: 0.5s;
+   color: #efefef;
+   background-color: #0e0e0e;
+ 
+   
+ }
+ 
+ .product-grid button {
+   padding: 10px 20px;
+   font-size: 1em;
+   cursor: pointer;
+   border: revert;
+   border-radius: 6px;
+   margin-top: 31px;
+ }
+ 
+   /* Header / Hero Section */
+   .header {
+     background-image: url("../images/cover2.jpg");
+   
+     background-size: cover;
+     padding: 173px 37px;
+   }
+   .above{
+     width: 49%;
+     height: 230px;
+     position: relative;
+     z-index: 2;
+   }
+   .above,h3{
+     margin-top: 18px;
+   }
+   .large{
+     font-size: 55px;
+   }
+   
+   .btn{
+     padding: 10px 20px;
+     font-size: 1em;
+     cursor: pointer;
+     border: revert;
+     border-radius: 6px;
+     margin-top: 34px;
+   }
+   .btn:hover{
+     transition: 0.5s;
+     color: #eee9e7;
+     background-color: #e77244;
+     
+   }
+   
+   .hero{
+     margin-top: 18%;
+     margin-right: 76%;
+     margin-bottom: 6%;
+   }
+   
+   
+   .hero button {
+     padding: 10px 20px;
+     font-size: 1em;
+     cursor: pointer;
+   }
+   
+   /* Our Products Section */
+   .our-products {
+     padding: 40px 20px;
+     text-align: center;
+   }
+   
+   .product-grid {
+     display: inline-flex;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 20px;
+   }
+   
+   .product-item {
+     width: 200px;
+     text-align: center;
+   }
+   .product-item1,.product-item3{
+     margin-top: 21%;
+   }
+   
+   
+   
+   /* Call-to-Action Section */
+   .cta {
+     background-color: #efefef;
+     text-align: center;
+     padding: 30px 20px;
+   }
+   
+   .cta h2 {
+     font-size: 1.5em;
+   }
+   /*Our Feature*/
+   .featured-products {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ .product-grid {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-right: 150px;
+     padding-left: 150px;
+ }
+ 
+ .product {
+     width: 20%;
+     padding: 20px;
+     margin-bottom: 20px;
+ }
+ 
+ .product img {
+     width: 100%;
+     height: auto;
+ }
+ 
+ .rating {
+     color: orange;
+ }
+ 
+ .color-options {
+     display: flex;
+ }
+ 
+ .color-option {
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     margin-right: 5px;
+ }
+ 
+ /*image zoom*/
+ img {
+   transition: transform 0.3s ease; 
+   border-radius: 33px;
+ }
+ 
+ img:hover {
+   transform: scale(1.1); 
+ }
+ 
+   /* Blog Section */
+   .blog {
+     padding: 40px 20px;
+     text-align: center;
+    
+   }
+   
+   .blog-grid {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 20px;
+     margin-bottom: 68px;
+   }
+   
+   .blog-post {
+     width: 200px;
+     text-align: center;
+   }
+   .blog-post {
+     height: 150px;
+   }
+   
+   .blog-image {
+     width: 100%;
+     height: 150px;
+     background-color: #ddd;
+     margin-bottom: 10px;
+   }
+   
+   /* Footer */
+   footer
+{
+    background-color: black;
+   color: #fff;
+  font-family: Arial, sans-serif;
+}
+footer .title
+{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .title span
+{
+    color:#e1541c;
+}
+footer .sales
+{
+    display: flex; 
+    gap: 450px; 
+}
+footer .sales ul
+{
+    list-style-type: none;
+}
+footer .sales a
+{
+    text-decoration: none;
+    color: #fff;
+    
+}
+footer .sales a:hover
+{
+    color:#e1541c;
+}
+
+footer .sales h3
+{
+    margin-bottom: 4px;
+}
+footer .sales li
+{
+    padding: 6px;
+    padding-left: 0px;
+    
+}
+footer p
+{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+ 
+   /*end footer*/
+ 
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f7f7f7;
+   }
+   
+   .features {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     padding: 50px 20px;
+     background-color: #f9fafb;
+   }
+   
+   .feature-item {
+     text-align: center;
+     max-width: 200px;
+   }
+   
+   .feature-item img {
+     width: 50px;
+     height: 50px;
+     margin-bottom: 15px;
+   }
+   
+   .feature-item h3 {
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 10px;
+   }
+   
+   .feature-item p {
+     font-size: 14px;
+     color: #555;
+     line-height: 1.5;
+   }
+   
+   
+   
